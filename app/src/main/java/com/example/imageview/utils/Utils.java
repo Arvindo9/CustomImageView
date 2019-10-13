@@ -1,7 +1,9 @@
 package com.example.imageview.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Point;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.Display;
@@ -45,5 +47,17 @@ public class Utils {
 
     public static float convertDpToPixel(float dp, Resources resources){
         return dp * ((float) resources.getDisplayMetrics().densityDpi / DisplayMetrics.DENSITY_DEFAULT);
+    }
+
+    public static int getScreenWidth(Context context) {
+        Point size = new Point();
+        ((Activity) context).getWindowManager().getDefaultDisplay().getSize(size);
+        return size.x;
+    }
+
+    public static int getScreenHeight(Context context) {
+        Point size = new Point();
+        ((Activity) context).getWindowManager().getDefaultDisplay().getSize(size);
+        return size.y;
     }
 }
