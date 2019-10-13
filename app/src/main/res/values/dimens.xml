@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="touch_raise">6dp</dimen>
+
+    <dimen name="border_width">6dp</dimen>
+    <dimen name="avatar_size">100dp</dimen>
+</resources>

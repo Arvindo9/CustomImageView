@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BaseImageView">
+        <attr name="ImageShape" format="string" />
+        <attr name="ImageName" format="string" />
+        <attr name="BorderColor" format="color" />
+        <attr name="BackgroundInitialColor" format="color" />
+        <attr name="BorderWidth" format="dimension" />
+        <attr name="ImageCornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <attr name="BaseImageView" format="reference" />
+
+
+
+    <declare-styleable name="AvatarView">
+        <attr name="avatar_shape" format="string" />
+    </declare-styleable>
+
+    <attr name="AvatarViewStyle" format="reference" />
+</resources>
