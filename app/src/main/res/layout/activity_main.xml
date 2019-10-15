@@ -47,12 +47,26 @@
             tools:background="@drawable/tmp"/>
     </androidx.cardview.widget.CardView>
 
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:text="activity"
-        android:onClick="onClick"/>
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:text="height ration activity"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addviews"
+            android:text="text activity"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.core.widget.NestedScrollView>

@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        startActivity(new Intent(MainActivity.this, HeightRatioViewActivity.class));
+        if(view.getId() == R.id.button)
+            startActivity(new Intent(MainActivity.this, HeightRatioViewActivity.class));
+        else if(view.getId() == R.id.addviews)
+            startActivity(new Intent(MainActivity.this, TextActivity.class));
     }
 }
