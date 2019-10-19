@@ -81,20 +81,16 @@ public class Utils {
         return (int) px;
     }
 
-    public static int getTextViewWeight(TextView textView) {
+    public static int getTextViewWeight(View textView) {
         WindowManager wm =
                 (WindowManager) textView.getContext().getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
 
         int deviceWidth;
 
-        if(android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2){
-            Point size = new Point();
-            display.getSize(size);
-            deviceWidth = size.x;
-        } else {
-            deviceWidth = display.getWidth();
-        }
+        Point size = new Point();
+        display.getSize(size);
+        deviceWidth = size.x;
 
         int widthMeasureSpec = View.MeasureSpec.makeMeasureSpec(deviceWidth, View.MeasureSpec.AT_MOST);
         int heightMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);

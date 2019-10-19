@@ -19,4 +19,14 @@
     </declare-styleable>
 
     <attr name="AvatarViewStyle" format="reference" />
+
+
+    <declare-styleable name="BaseLinearLayoutTextVertical">
+        <attr name="TextColor" format="color" />
+        <attr name="TextBackground" format="color" />
+        <attr name="RightMargin" format="dimension" />
+        <attr name="Layout" format="reference" />
+        <attr name="LayoutText" format="reference" />
+    </declare-styleable>
+
 </resources>

@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".HeightRatioViewActivity" />
         <activity android:name=".TextActivity" />
+        <activity android:name=".TextVerticalActivity" />
+        <activity android:name=".TextActivityBase" />
     </application>
 
 </manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.imageview.core.BaseLinearLayoutTextVertical
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customMainLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:Layout="@layout/text_activity_layout"
+    app:LayoutText="@layout/text_activity_text"
+    app:RightMargin="20dp">
+</com.example.imageview.core.BaseLinearLayoutTextVertical>

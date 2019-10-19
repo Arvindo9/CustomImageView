@@ -33,5 +33,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, HeightRatioViewActivity.class));
         else if(view.getId() == R.id.addviews)
             startActivity(new Intent(MainActivity.this, TextActivity.class));
+        else if(view.getId() == R.id.textViewVertical)
+            startActivity(new Intent(MainActivity.this, TextVerticalActivity.class));
+        else if(view.getId() == R.id.addviewsBase)
+            startActivity(new Intent(MainActivity.this, TextActivityBase.class));
     }
 }
